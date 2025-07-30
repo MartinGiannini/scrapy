@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Scrapy Rediseñador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 4px 0 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result-link {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Rediseñador de Páginas</h1>
+  <label for="url">URL de la página a raspar:</label>
+  <input type="text" id="url" placeholder="https://example.com">
+  <label for="style">CSS de rediseño:</label>
+  <textarea id="style" rows="8" placeholder="Escribe tu CSS aquí..."></textarea>
+  <button id="submit">Aceptar</button>
+  <p id="message"></p>
+  <p id="result-link"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
